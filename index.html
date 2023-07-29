@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <h1>Formularios</h1>
+    <form action="https://formsubmit.co/sterlingazcona1719@email.com" method="POST">
+
+           <fieldset>
+             <legend>Datos Personas</legend>
+             <label for="nombre">Nombre</label> <br/>
+             <input type="text" id="nombre" name="nombre"
+              placeholder="Escibe tu nombre" required="true"/> <br/>
+
+              <label for="Apellido">Apellido</label><br/>
+              <input type="text" id="Apellido" name="Apellido"
+              placeholder="Escribe tu apellido" required="true"> <br/>
+
+
+
+
+              <label for="email">Email</label><br/>
+              <input type="text" id="email" name="email"><br/>
+
+            
+              <label for="edad">Edad</label><br/>
+              <input type="number" id="edad" name="edad"><br/>
+
+              <label for="Genero"></label><br/>
+              <input type="radio" name="Femenino" value="femenino">
+              <label for="Femenino">Femenino</label><br>
+              <input type="radio" name="Masculino" value="masculino">
+              <label for="masculino">Masculino</label><br>
+
+              <label>Genero de música favorito</label>
+              <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+              <label for="clasica">Clásica</label><br/>
+              <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+              <label for="jazz">Jazz</label><br/>
+
+              <label for="autos">Marca de vehiculos favorita</label><br/>
+              <select id="autos" name="autos" >
+                   <option value="volvo">Volvo</option>
+                   <option value="Audi">Audi</option>
+                   <option value="BMW" selected="true">BMW</option>
+             </select><br/>
+             
+             <label for="comentario">Comentario</label>
+             <textarea name="comentario" id="comentario" cols="30" rows="2">
+             Este es mi comentario
+            </textarea>
+
+             <br/>
+             <input type="submit" value="Enviar">
+             <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+
+             <input type="reset" value="restablecer"/>
+               
+
+           </fieldset>
+
+    </form>
+
+
+</body>
+</html>
